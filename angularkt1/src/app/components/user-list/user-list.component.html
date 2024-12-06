@@ -1,0 +1,10 @@
+<div class="users_wrapper">
+    <ng-container *ngFor="let user of usersService.computedUsers(); trackBy: trackUserId">
+        <app-user-item
+            [name]="user.name"
+            [username]="user.username"
+            [website]="user.website"
+            [email]="user.email"
+        ></app-user-item>
+    </ng-container>
+</div>

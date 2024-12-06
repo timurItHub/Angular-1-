@@ -1,0 +1,15 @@
+<div class="data_form">
+    <label>
+        Search by name
+    </label>
+    <input [(ngModel)]="userService.nameValue" placeholder="Enter name" />
+    <hr>
+    <label>
+        Search by email domain
+    </label>
+    <select [(ngModel)]="userService.emailDomain">
+        <option value="net">.net</option>
+        <option value="org">.org</option>
+        <option value="tv">.tv</option>
+    </select>
+</div>
